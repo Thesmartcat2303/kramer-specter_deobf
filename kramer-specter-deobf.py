@@ -5,12 +5,6 @@ try:
 except:
     pass
 
-print(">>> Kramer-Specter Deobf by KhanhNguyen9872")
-print(">>> FB: https://fb.me/khanh10a1")
-print("!! ĐÂY LÀ TOOL SHARE FREE TẠI GITHUB KHANHNGUYEN9872 !!")
-print("!! NẾU BẠN MUA TOOL NÀY TỪ MỘT AI ĐÓ, HỌ LÀ LỪA ĐẢO !!")
-print()
-
 import sys
 __pypath__ = __import__('os').getcwd()
 
@@ -81,8 +75,8 @@ def random_str(length = 24):
 open('khanhnguyen9872.py','w').write(r'exec(__import__("marshal").loads(__import__("zlib").decompress(__import__("base64").b64decode(' + str(__import__("base64").b64encode(__import__("zlib").compress(__import__('marshal').dumps(compile(r'''
 from builtins import *
 from zlib import decompress as {11}
-def {10}(id="https://fb.me/khanh10a1"):
-    return "# Kramer/Specter Deobf by KhanhNguyen9872\n# file name: [{0}] ({1} - {2})\n# dump -> code " + str(id) + "\n\n"
+def {10}(id="https://www.facebook.com/Thesmartcat.2303"):
+    return "# Kramer/Specter Deobf by Thesmartcat2303\n# file name: [{0}] ({1} - {2})\n# dump -> code " + str(id) + "\n\n"
 try:
     {6}=exec
     __file__ = """{5}"""
