@@ -13,6 +13,10 @@ print(">> Python: {}".format(pyver))
 
 while 1:
     try:
+        file_list = [file_name for file_name in __import__('os').listdir(__import__('os').getcwd()) if file_name.endswith((".pyc", ".py", ".txt", ".exe"))]
+        for i, file_name in enumerate(file_list, start=1):
+            print(" " + file_name + " ", end=" ")
+            if i % 1 == 0:print()
         file = input(">> Input file Kramer/Specter: ").replace("\"","")
         sieu_nhan_gao_xanh = open(file, 'rb').read(4)
         if b"\r\r\n" in sieu_nhan_gao_xanh:
@@ -72,7 +76,7 @@ def random_str(length = 24):
     list_random.append(rand)
     return rand
 
-open('khanhnguyen9872.py','w').write(r'exec(__import__("marshal").loads(__import__("zlib").decompress(__import__("base64").b64decode(' + str(__import__("base64").b64encode(__import__("zlib").compress(__import__('marshal').dumps(compile(r'''
+open('THESMARTCAT2303.py','w').write(r'exec(__import__("marshal").loads(__import__("zlib").decompress(__import__("base64").b64decode(' + str(__import__("base64").b64encode(__import__("zlib").compress(__import__('marshal').dumps(compile(r'''
 from builtins import *
 from zlib import decompress as {11}
 def {10}(id="https://www.facebook.com/Thesmartcat.2303"):
@@ -127,7 +131,7 @@ def exec(source,glba=None,lcb=None):
                             open(globals()[{11}(b'1\x02x\x06\x00\x01-(+\xcc\xcb\x9cx'[::-1]).decode()](' >> file name: '), {8}).write({9})
                             break
                         except KeyboardInterrupt:
-                            __import__('os').unlink(r'{3}/khanhnguyen9872.py')
+                            __import__('os').unlink(r'{3}/THESMARTCAT2303.py')
                             __import__('sys').exit(0)
                         except:
                             globals()[{11}(b'.\x02\x88\x06\x00\x01+\xcc\xca(+\x9cx'[::-1]).decode()]("!! something is error !!")
@@ -135,13 +139,13 @@ def exec(source,glba=None,lcb=None):
                     if globals()[{11}(b'1\x02x\x06\x00\x01-(+\xcc\xcb\x9cx'[::-1]).decode()]({11}(b'x\x9c\xb3\xb3Sp\xc9W\xa8\xcc/U(O\xcc+Q(\xc9WH\xce\xcf+\xc9\xcc+M\xb5W\x88\x8e\xd4\xcf\x8b\xb5R\x00\x00\xd0\xb3\x0b\x96').decode()).lower()=="y":
                         pass
                     else:
-                        __import__('os').unlink(r'{3}/khanhnguyen9872.py')
+                        __import__('os').unlink(r'{3}/THESMARTCAT2303.py')
                         __import__('sys').exit(0)
             else:
                 open('{0}_dump/{{}}_{0}'.format({7}), {8}).write({9})
                 globals()[{11}(b'.\x02\x88\x06\x00\x01+\xcc\xca(+\x9cx'[::-1]).decode()](" > Saved: [{0}_dump/{{}}_{0}]".format({7}))
     except KeyboardInterrupt:
-        __import__('os').unlink(r'{3}/khanhnguyen9872.py')
+        __import__('os').unlink(r'{3}/THESMARTCAT2303.py')
         __import__('sys').exit(0)
 
     {7}+=1
@@ -163,7 +167,7 @@ from builtins import __spec__ as __spec__
         random_str(),
         random_str(),
         random_str(),
-    ),'<KhanhNguyen9872>','exec'))))[::-1]) + r"[::-1]))),globals())")
+    ),'<THESMARTCAT2303>','exec'))))[::-1]) + r"[::-1]))),globals())")
 
 if is_auto_save:
     try:__import__('os').mkdir("/".join(file.split("\\")).split("/")[-1] + "_dump")
@@ -178,13 +182,13 @@ sys.argv[0]=__file__
 
 marshal=r'''
 try:
-    __import__('khanhnguyen9872').__spec__ = __import__('builtins').__spec__
-    __import__('sys').modules['builtins']=__import__('sys').modules['khanhnguyen9872']
+    __import__('THESMARTCAT2303').__spec__ = __import__('builtins').__spec__
+    __import__('sys').modules['builtins']=__import__('sys').modules['THESMARTCAT2303']
     __import__('builtins').exec.__name__ = 'exec'
     __import__('builtins').exec.__module__ = 'builtins'
     __builtins__ = __import__('builtins')
 except:
-    __import__('os').unlink(r'{}/khanhnguyen9872.py')
+    __import__('os').unlink(r'{}/THESMARTCAT2303.py')
     __import__('sys').exit(1)
 '''.format(__pypath__).encode('utf8')
 
@@ -193,7 +197,7 @@ if data:
 else:
     marshal+=data_dump
 
-marshal+="""\n\n__import__('os').unlink(r'{}/khanhnguyen9872.py')""".format(__pypath__).encode('utf8')
+marshal+="""\n\n__import__('os').unlink(r'{}/THESMARTCAT2303.py')""".format(__pypath__).encode('utf8')
 
 try:
     del random_str, list_random, data, data_dump, is_auto_save, day_la_binary, sieu_nhan_gao_xanh, file, pyver
@@ -201,7 +205,7 @@ except:
     pass
 
 try:
-    exec('exec(__import__("marshal").loads(' + str(__import__('marshal').dumps(compile(marshal, '<KhanhNguyen9872>', 'exec'))) + "), globals())",globals())
+    exec('exec(__import__("marshal").loads(' + str(__import__('marshal').dumps(compile(marshal, '<THESMARTCAT2303>', 'exec'))) + "), globals())",globals())
 except KeyboardInterrupt:
     pass
 except Exception as e:
@@ -213,7 +217,7 @@ try:
 except:
     pass
 try:
-    __import__('os').unlink(r'{}/khanhnguyen9872.py'.format(__pypath__))
+    __import__('os').unlink(r'{}/THESMARTCAT2303.py'.format(__pypath__))
 except:
     pass
 __import__('sys').exit()
